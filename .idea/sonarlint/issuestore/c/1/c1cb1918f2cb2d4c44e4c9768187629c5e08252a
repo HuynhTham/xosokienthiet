@@ -1,0 +1,7 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯şŠ›ıÿÿÿÿ8×ıØ¡Æ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÈúÌşÿÿÿÿ8×ıØ¡Æ1
+i	java:S116"TRename this field "full_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€½ó›
+k	java:S116"VRename this field "day_of_week" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÇÖÍ
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯şŠ›ıÿÿÿÿ8ÛıØ¡Æ1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÈúÌşÿÿÿÿ8ÜıØ¡Æ1
