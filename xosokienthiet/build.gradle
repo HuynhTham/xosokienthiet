@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.9.2'
+}
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // JUnit
+    testImplementation 'junit:junit:3.8.1'
+
+// https://mvnrepository.com/artifact/javax.servlet/jstl
+    implementation 'javax.servlet:jstl:1.2'
+
+    // Servlet API (Provided scope)
+    implementation 'javax.servlet:javax.servlet-api:3.1.0'
+
+    // MySQL Connector
+    implementation 'mysql:mysql-connector-java:8.0.28'
+
+    // JDBI Core
+// https://mvnrepository.com/artifact/org.jdbi/jdbi3-core
+    implementation 'org.jdbi:jdbi3-core:3.42.0'
+
+    // HikariCP
+    implementation 'com.zaxxer:HikariCP:4.0.3'
+
+    // Lombok
+    implementation 'org.projectlombok:lombok:1.18.22'
+
+    // Apache POI
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
